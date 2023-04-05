@@ -25,8 +25,7 @@
         <&kp>,
         <&kp>;
     };
-  };
-   behaviors {
+    {
        as: auto_shift {
         compatible = "zmk,behavior-hold-tap";
         label = "AUTO_SHIFT";
@@ -36,14 +35,7 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
                 };
-modcp: mod_copy {
-        compatible = "zmk,behavior-mod-morph";
-        label = "MOD_COPY";
-        #binding-cells = <0>;
-        bindings = <&as LS(C) C>, <&kp C>;
-        mods = <(MOD_LGUI | MOD_RGUI)>;
-};
-
+  };
   combos {
     compatible = "zmk,combos";
 
